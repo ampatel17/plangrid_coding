@@ -14,3 +14,10 @@
 
 3. curl -X POST http://127.0.0.1:5000/messages -d 'Test Data' 
 >OUTPUT: Test Data
+
+4. curl localhost:5000/test 
+>OUTPUT: 
+{
+  "message": "Not Found: http://localhost:5000/test",
+  "status": 404
+}
