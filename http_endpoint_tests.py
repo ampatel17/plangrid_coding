@@ -15,7 +15,7 @@ class TestPut(unittest.TestCase):
     def test_put(self):
         data = 'Test Data'
         response = requests.post('http://localhost:5000', data)
-        print(response.text)
+        #print(response.text)
         self.assertEqual(response.text, data)
 
 class TestErrorMessage(unittest.TestCase):
