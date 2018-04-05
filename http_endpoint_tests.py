@@ -25,7 +25,7 @@ class TestErrorMessage(unittest.TestCase):
             'message': 'Not Found: ' + 'http://localhost:5000/temp',
             }
         response = requests.get('http://localhost:5000/temp')
-        #print(response.text)
+        print(response.text)
         self.assertEqual(response.json(), message)
                
 
